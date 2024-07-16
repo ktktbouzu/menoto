@@ -3,6 +3,8 @@ import { nord } from '@milkdown/theme-nord';
 import { Milkdown, MilkdownProvider, useEditor } from '@milkdown/react';
 import { commonmark } from '@milkdown/preset-commonmark';
 
+import '../styles/components/noteEditor.scss';
+
 function EditorComponent() {
   const { get } = useEditor((root) =>
     Editor.make()
@@ -19,7 +21,7 @@ function EditorComponent() {
 
 export default function NoteEditor() {
   return (
-    <div>
+    <div className="note-editor">
       <MilkdownProvider>
         <EditorComponent />
       </MilkdownProvider>
