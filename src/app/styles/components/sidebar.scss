@@ -1,0 +1,17 @@
+.sidebar {
+  &__title-bar {
+    padding: 20px 15px;
+
+  }
+
+  &__list {
+    > li {
+      padding: 10px 15px;
+      border-bottom: 1px solid #CCC;
+    }
+    
+    > li:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
